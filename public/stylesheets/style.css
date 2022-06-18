@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50,50,50);
+}
+
+header h1 a {
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+}
+
+header nav {
+    padding: 30px 40px 0px 0px;
+}
+
+header nav a {
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

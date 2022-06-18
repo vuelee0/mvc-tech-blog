@@ -9,19 +9,21 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Reel Tech Blog</a>
-            </h1>
-        </header>
 
-        <main>
-            {{{ body }}}
-        </main>
+    <header>
+        <h1>
+            <a href="/">Reel Tech Blog</a>
+        </h1>
+        <nav>
+            <a class="link" href="/">Home</a>
+            <a class="link" href="/dashboard">Dashboard</a>
+            <button id="logout-btn" class="btn-no-style">Logout</button>
+        </nav>
+    </header>
 
-    </div>
-
+        
+    {{{ body }}}
+        
 </body>
 
 </html>

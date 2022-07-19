@@ -27,3 +27,14 @@ header nav a {
     text-decoration: none;
     color: white;
 }
+
+.login-form {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form button {
+    margin: 10px;
+}

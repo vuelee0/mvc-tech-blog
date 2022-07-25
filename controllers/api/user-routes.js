@@ -133,7 +133,7 @@ router.post('/logout', (req, res) => {
   
 
 // update a user
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
 
     // pass in req.body instead to only update what's passed through
     User.update(req.body, {
@@ -157,7 +157,7 @@ router.put('/:id', withAuth, (req, res) => {
   
 
 // delete a user
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
     User.destroy({
         where: {
             id: req.params.id

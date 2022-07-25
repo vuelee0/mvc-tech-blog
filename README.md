@@ -55,6 +55,8 @@ For any questions about this project, contact me at:
 - Github: [vuelee0](https://github.com/vuelee0)
 - Email: vuelee09@gmail.com
 
+## Deployed Application
+https://obscure-anchorage-42198.herokuapp.com/
 
 ## Screenshots
 ![image](./public/images/techblogSS.png)

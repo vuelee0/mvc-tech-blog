@@ -6,19 +6,19 @@ const { User, Post, Comment } = require('../../models');
 router.get('/', (req, res) => {
     // Access our User model and run .findAll() method)
     User.findAll({
-        attributes: { exclude: ['password'] },
-        include: [
-            {
-                model: Post,
-                as: 'posts',
-                attributes: ['id', 'title', 'body'],
-            },
-            {
-                model: Comment,
-                as: 'comments',
-                attributes: ['id', 'comment_text', 'post_id'],
-            },
-        ],
+        attributes: { exclude: ['password'] }
+        // include: [
+        //     {
+        //         model: Post,
+        //         as: 'posts',
+        //         attributes: ['id', 'title', 'body'],
+        //     },
+        //     {
+        //         model: Comment,
+        //         as: 'comments',
+        //         attributes: ['id', 'comment_text', 'post_id'],
+        //     },
+        // ],
     })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -34,19 +34,19 @@ router.get('/:id', (req, res) => {
         attributes: { exclude: ['password'] },
         where: {
             id: req.params.id
-        },
-        include: [
-            {
-                model: Post,
-                as: 'posts',
-                attributes: ['id', 'title', 'body'],
-            },
-            {
-                model: Comment,
-                as: 'comments',
-                attributes: ['id', 'comment_text', 'post_id'],
-            },
-        ]
+        }
+        // include: [
+        //     {
+        //         model: Post,
+        //         as: 'posts',
+        //         attributes: ['id', 'title', 'body'],
+        //     },
+        //     {
+        //         model: Comment,
+        //         as: 'comments',
+        //         attributes: ['id', 'comment_text', 'post_id'],
+        //     },
+        // ]
     })
     .then(dbUserData => {
         if (!dbUserData) {
